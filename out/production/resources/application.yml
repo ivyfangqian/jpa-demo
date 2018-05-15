@@ -10,3 +10,12 @@ spring:
   h2:
     console:
       enabled: true
+  datasource:
+    url: jdbc:mysql://localhost/jpademo?useSSL=false&serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
